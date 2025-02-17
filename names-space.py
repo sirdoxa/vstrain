@@ -1,6 +1,5 @@
 '''local --> enclosed --> global --> built-in'''
 
-
 def a():
     x = 12
     print('a->', x)
@@ -10,7 +9,6 @@ def a():
         print('a2->', x)
     a2()
 
-
 a()
 
 # a2() not defined because we didn't call a()
@@ -18,7 +16,6 @@ a()
 # --------------------------------------------------
 
 x = 10
-
 
 def g():
     x = 15
