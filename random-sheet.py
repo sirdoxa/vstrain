@@ -130,8 +130,7 @@
 # moadel = (nomarat[1] +nomarat[2] + nomarat[3]) / (len(nomarat) - 1)
 # print(f'hello {name} here is your moadel: ',moadel)
 # print(nomarat)
-# from Demos.security.sspi.fetch_url import options
-from pytz import country_names
+
 
 # li = []
 # name = input("Enter your name: ")
