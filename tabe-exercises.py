@@ -14,29 +14,35 @@
 #     st = input('enter some numbers: ').split(' ')
 #     print(st)
 #     x = len(st) - 1
-#     print(st[x])        
+#     print(st[x])
 
 # max1()
 
 # ----!!!!!!!!!!!!!!!!!!!!!!!!!!---
 
 # def min1():
-#     st = sorted(list(map(int,input('x:').split(' '))))
-        
-#     print(st[0])
+#     st = input('x: ').split(' ')
+#     l = []
+#     for i in st:
+#         l.append(int(i))
+#     l = sorted(l)
+#     print(l[0])
+
+
 # min1()
 
-#----------------------------------
+# ----------------------------------
 
 # def sum1():
-#     st =sorted(list(map(int,input('x:').split(' '))))
+#     st = sorted(input('x: ').split(' '))
 #     x = 0
 #     for i in st:
+#         i = int(i)    # !!!!!!!!!!!!!
 #         x = x + i
 #     print(x)
 # sum1()
 
-#-------------------------------
+# -------------------------------
 
 # def moraba():
 #     x = int(input('enter your number: '))
@@ -48,7 +54,7 @@
 #         print('no')
 # moraba()
 
-#--------------------------------------
+# --------------------------------------
 
 # def price():
 #     x = int(input("enter the price: "))
@@ -57,10 +63,10 @@
 #     return print(f'the final price is {x - (x * y)} dollars')
 # price()
 
-#--------------------------------
+# --------------------------------
 
 # def find():
-#     x = input("enter chr: ")    
+#     x = input("enter chr: ")
 #     y = int(ord(x))
 #     if 57>=y>=48:
 #         print('its a number!!!')
