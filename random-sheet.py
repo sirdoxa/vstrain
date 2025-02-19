@@ -361,10 +361,12 @@
 # z = input("Enter the third number: ")
 # print(max3(x, y))
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-s = 'robot'
-a,b,c,d,e = s
-b = d = '*'
-s = (a,b,c,d,e)
-print(s)
+# s = 'robot'
+# a,b,c,d,e = s
+# b = d = '*'
+# s = (a,b,c,d,e)
+# print(s)
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+for i in (1,2,3,4,5):
+    print(i)
