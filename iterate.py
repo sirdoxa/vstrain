@@ -31,7 +31,31 @@
 
 #-------------------------------------
 
-from itertools import count
-counter = count() #=>lazy
-print('__next__'in dir(counter))
-print(next(counter))
+# from itertools import count
+# counter = count() #=>lazy
+# print('__next__'in dir(counter))
+# print(next(counter))
+
+
+#----------------------------------------
+
+# l = [1,2,3,4,5,6]
+# l=iter(l)
+# print(next(l))
+
+from functools import partial
+s = 'abcdef'
+t = 'bg'
+for i in t :
+    if i in s :
+       x = True
+    else:
+        x=False
+        break
+if x == True:
+    print('subseq')
+elif x == False:
+    print('not subseq')
+
+help(partial)
+
