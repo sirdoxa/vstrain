@@ -2,13 +2,14 @@ def exmp(func):
     def inner ():
         print(15 * '*')
         func()
-        
-        print(15 * '*')
+
+        print(15 * '*') 
     return inner
 
 
 def func():
-    print ('reza')
+    print ('dana haroom')
 
 s = exmp(func)
 s()
+print('***************\ntaha\nnabavi\n***************')
