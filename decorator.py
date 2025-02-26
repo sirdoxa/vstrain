@@ -39,18 +39,69 @@
 
 # =======================================
 
-def dec(ka):
-    def mo():
-        print('=' * 20)
-        ka()
-        print('=' * 20)
-    mo()
-    return mo
+# def dec(ka):
+#     def mo():
+#         print('=' * 20)
+#         ka()
+#         print('=' * 20)
+#     mo()
+#     return mo
+
+
+# def ka():
+#     return 'mahdi'
+
+# s = dec(ka)
+# s()
+
+# --------------------------------------
+# import functools
+
+# def decorator_name(func):
+#     @functools.wraps(func)  # این خط اطلاعات تابع اصلی را حفظ می‌کند
+#     def wrapper(*args, **kwargs):
+#         # ✅ کد قبل از اجرای تابع اصلی (Pre-processing)
+#         result = func(*args, **kwargs)  # اجرای تابع اصلی
+#         # ✅ کد بعد از اجرای تابع اصلی (Post-processing)
+#         return result
+#     return wrapper
 
 
 
-def ka():
-    return 'mahdi'
+#--------------------------------------------------------------------
+# import functools
 
-s = dec(ka)
-s()
+# def decorator_name(o):
+#     def actual_decorator(func):  # حالا این تابع، `func` را می‌گیرد
+#         @functools.wraps(func)  # حفظ اطلاعات تابع اصلی
+#         def wrapper(*args, **kwargs):
+#             print('*' * o)  # ✅ کد قبل از اجرای تابع اصلی
+#             result = func(*args, **kwargs)  # اجرای تابع اصلی
+#             return result  # ✅ بازگرداندن مقدار تابع اصلی
+#         return wrapper
+#     return actual_decorator  # دکوراتور اصلی را برمی‌گردانیم
+
+# @decorator_name(25)  # دکوراتور حالا یک عدد می‌گیرد
+# def func():
+#     return 'mahdi'
+
+# print(func())
+
+#---------------------------------------------------
+from time import perf_counter
+def debug(f):
+    def debuger(*args,**kw):
+        start = perf_counter()
+        f(*args,**kw)
+        end = perf_counter()
+        g = end - start
+        print(f'time : {g:.10f}')
+    return debuger
+
+
+@debug
+def pow(x):
+   return x ** 2 * 8
+
+h = pow(8)
+print(h)
