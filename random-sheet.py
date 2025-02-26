@@ -368,5 +368,29 @@
 # print(s)
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-for i in (1,2,3,4,5):
-    print(i)
+# for i in (1,2,3,4,5):
+#     print(i)
+
+
+
+# def outer(func):
+#     def inner():
+#         print('hello')
+#         func()
+#         print('bye')
+#     return inner
+
+# @outer
+# def name ():
+#     print('mahdi')
+
+# name()
+
+#----------------------------------------------------
+
+
+# import time
+# help(time.perf_counter)
+
+
+
