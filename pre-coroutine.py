@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # def cor():
 #     print('hi')
 #     while True :
@@ -57,3 +58,16 @@ print(f.send('sag'))
 print(f.send('taha'))
 print(f.send('j'))
 
+=======
+def cor():
+    print('hi')
+    while True :
+        name = yield
+        print(f'my name is {name}')
+        print('bye')
+
+x = cor()
+next(x)
+x.send('kalak')
+next(x)
+>>>>>>> e0f7da7b1be6766c91c1c56eaf086b1407c2825e
