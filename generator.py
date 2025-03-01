@@ -119,4 +119,24 @@ print(next(v))  # [14, 2, 3, 1, 4, 5, 28, 8]
 # print(next(p))
 # print(next(p))
 # print(next(p))
+<<<<<<< HEAD
 # print(next(p))
+# -------------------------------------------------
+def y (f):
+    def inner ():
+            p = f()
+            yield p ** 2
+    return inner
+
+@y
+def x ():
+    import random
+    x = random.randint(1,100)
+    print(x)
+    return x
+
+o = x()
+print(next(o))
+=======
+# print(next(p))
+>>>>>>> e0f7da7b1be6766c91c1c56eaf086b1407c2825e
