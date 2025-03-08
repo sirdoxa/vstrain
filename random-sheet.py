@@ -394,3 +394,46 @@
 
 
 
+# x = [1,2,3,4,5,6,7,8,9]
+# l = []
+# for i in x:
+#     if i % 2 == 0:
+#         l.append(i)
+
+# def mul(args):
+#     res = 1
+#     for i in args:
+#         res *= i
+#     return res
+    
+# h = mul(l)
+# print(h)
+# p = 1
+# print(map(lambda x:p*x , ))
+#------------------------------------------------
+# from random import randint
+# y = int(input('enter a number: '))
+# z = 0
+# while True:
+#     x = randint(1,100)
+#     while x != y :
+#         z += 1
+#     if x == y :
+#         print('thats it')
+#         break
+
+# print(z+'times')
+#========================================================
+from random import randint
+
+y = int(input('Enter a number: '))  
+z = 0  
+while True:
+    m = {0}
+    x = randint(1, 10000000)
+    m.add(x)  
+    z += 1  
+    if  y in m:
+        break  
+
+print(f'Tried {z} times') 
