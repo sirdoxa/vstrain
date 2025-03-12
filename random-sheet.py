@@ -419,22 +419,23 @@
 #     while x != y :
 #         z += 1
 #     if x == y :
-#         print('thats it')
-#         break
+# #         print('thats it')
+# #         break
 
-# print(z+'times')
-#========================================================
-from random import randint
+# # print(z+'times')
+# #========================================================
+# from random import randint
 
-y = int(input('Enter a number: '))  
-z = 0  
-while True:
-    m = {0}
-    x = randint(1, 10000000)
-    m.add(x)  
-    z += 1  
-    if  y in m:
-        break  
+# y = int(input('Enter a number: '))  
+# z = 0  
+# while True:
+#     m = {0}
+#     x = randint(1, 10000000)
+#     m.add(x)  
+#     z += 1  
+#     if  y in m:
+#         break  
 
-print(f'Tried {z} times') 
+# print(f'Tried {z} times') 
+
 
