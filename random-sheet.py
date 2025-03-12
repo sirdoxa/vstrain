@@ -438,7 +438,3 @@ while True:
 
 print(f'Tried {z} times') 
 
-#     encoding-decoding-ascii-unicode
-x = 'p'
-print(ord(x))
-print(chr(112))
