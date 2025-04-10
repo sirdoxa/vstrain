@@ -438,4 +438,29 @@
 
 # print(f'Tried {z} times') 
 
+# -------------------------------------------------
+# import sys
+# sys.setrecursionlimit(1500)
+# def say_hi(x=0):
+#     if x == 1400:
+#         return 'bye'
+#     print("salam!")
+#     return say_hi(x + 1)
+
+# result = say_hi()
+# print(result)
+
+# -------------------------------------------------
+# import webbrowser
+# url = 'https://www.google.com/maps'
+# webbrowser.open_new_tab(url)
+# -------------------------------------------------
+import time
+print(time.ctime())
+print(time.asctime())
+print(time.get_clock_info('time'))
+print(time.gmtime())
+print(time.mktime(''))
+
+
 
