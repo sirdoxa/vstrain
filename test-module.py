@@ -5,6 +5,7 @@ import module.mod1
 # module.mod1.dec_name()
 
 import module.mod2
+print(module.x)
 from modulef import *
 print(func1('2356'))
 print(name)
