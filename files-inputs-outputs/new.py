@@ -13,16 +13,24 @@
 'rb+' , 'wb+' , 'ab+' , 'xb+'
 
 '''
-f = open('new.txt','r')    
+# f = open('new.txt','r')    
 
-print(f.readline())
-print(f.readline())
-f = open('w-test.txt','w')   
-print(f.write('mahdi')) 
+# print(f.readline())
+# print(f.readline())
+# f = open('w-test.txt','w')   
+# print(f.write('mahdi')) 
 
-f = open('w-test.txt','a')   
-print(f.write('\nnabavi')) 
-print(f.write('\npython')) 
-print(f.readline())
+# f = open('w-test.txt','a')   
+# print(f.write('\nnabavi')) 
+# print(f.write('\npython')) 
+# print(f.readline())
+
+# x = open('new.txt','a',encoding='utf-8')
+
+# print(x.write('🂮'))
+
+o = open('note.txt','ab')
+s = bytes('🂢 🂣 🂤 🂥 🂦 🂧 🂨 🂩 🂪 🂫','utf-8')
+print(o.write(s))
 
 
