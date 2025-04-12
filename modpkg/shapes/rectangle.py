@@ -1,5 +1,5 @@
 def masahatm (tol, arz):
-    return x * y
+    return tol * arz
 
 
 def mohitm (tol, arz):
