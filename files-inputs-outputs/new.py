@@ -29,8 +29,31 @@
 
 # print(x.write('🂮'))
 
-o = open('note.txt','ab')
-s = bytes('🂢 🂣 🂤 🂥 🂦 🂧 🂨 🂩 🂪 🂫','utf-8')
-print(o.write(s))
+# o = open('note.txt','ab')
+# s = bytes('🂢 🂣 🂤 🂥 🂦 🂧 🂨 🂩 🂪 🂫','utf-8')
+# print(o.write(s))
+
+# import os
+# f = open('mahdi.txt','a')
+# f.write('mahdi\n')
+# f.flush()
+# os.fsync(f)
+# f.write('taha\n')
+# input('x: ')
+# f.close()
+
+# import io
+# print(io.DEFAULT_BUFFER_SIZE)
+
+
+f = open('main.txt','rb')
+
+print(f.tell())
+print(f.read(3))
+f.seek(2,1)
+print(f.tell())
+print(f.read(5))
+
+
 
 
