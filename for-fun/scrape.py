@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import time
 
 def dec(func):
     def wrapper():
@@ -9,7 +10,7 @@ def dec(func):
     return wrapper
 
 def fp(price):
-    return "{:,}".format(int(price))
+    return f"{int(price):,}"
 
 @dec
 def dollar():
@@ -52,15 +53,19 @@ while True:
     choice = input("==> ")
 
     if choice == '1':
+        time.sleep(3)
         dollar()
         break
     elif choice == '2':
+        time.sleep(3)
         euro()
         break
     elif choice == '3':
+        time.sleep(3)
         pound()
         break
     elif choice == '4':
+        time.sleep(3)
         gold()
         break
     else:
