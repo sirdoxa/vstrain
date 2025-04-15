@@ -46,6 +46,14 @@
 # print(io.DEFAULT_BUFFER_SIZE)
 
 
+
+# POINTER
+# 0 ==> ابتدای فایل
+# 1 ==> موقعیت فعلی فایل
+# 2 ==> انتهای فایل
+
+
+
 f = open('main.txt','rb')
 
 print(f.tell())
