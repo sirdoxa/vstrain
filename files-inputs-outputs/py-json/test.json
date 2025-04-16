@@ -1,0 +1,22 @@
+{
+    "age": "18",
+    "last name": "nabavi",
+    "lessons": [
+        "fizik",
+        "honar",
+        "riazi"
+    ],
+    "marks": {
+        "fizik": [
+            15,
+            9,
+            13
+        ],
+        "riazi": [
+            15,
+            16,
+            17
+        ]
+    },
+    "name": "mahdi"
+}
