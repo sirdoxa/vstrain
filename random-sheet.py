@@ -455,12 +455,20 @@
 # url = 'https://www.google.com/maps'
 # webbrowser.open_new_tab(url)
 # -------------------------------------------------
-import time
-print(time.ctime())
-print(time.asctime())
-print(time.get_clock_info('time'))
-print(time.gmtime())
-print(time.mktime(''))
+# import time
+# print(time.ctime())
+# print(time.asctime())
+# print(time.get_clock_info('time'))
+# print(time.gmtime())
+# print(time.mktime(''))
 
 
+def name():
+    x = input('name: ')
+    return (f'welcome {x} !\nhere is your code!')
 
+
+def km():
+    x = input('KM: ')
+    y = int(x) * 1000
+    return ('*****' + f'{y} m' + '*****')
