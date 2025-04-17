@@ -472,3 +472,24 @@ def km():
     x = input('KM: ')
     y = int(x) * 1000
     return ('*****' + f'{y} m' + '*****')
+
+def miangin():
+    x = []
+    dars_ha = ['riazi', 'farsi', 'oloom', 'fizik']
+    
+    for dars in dars_ha:
+        while True:
+            try:
+                score = int(input(f'{dars} (0-20): '))
+                if 0 <= score <= 20:
+                    x.append(score)
+                    break
+                else:
+                    print('⚠️ Lotfan adadi bein 0 ta 20 vared konid.')
+            except ValueError:
+                print('⚠️ Lotfan faghat adad sahih vared konid.')
+    
+    average = sum(x) / len(x)
+    return average
+
+print(f'Miyangin shoma: {miangin():.2f}')
