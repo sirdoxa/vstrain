@@ -1,5 +1,4 @@
 import re
-
 while True:
     x = input('1)text:\n2)exit and show text:\n3)show word count:\n==> ')
     if x == '1':
