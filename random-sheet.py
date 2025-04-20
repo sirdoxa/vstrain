@@ -492,4 +492,9 @@ def miangin():
     average = sum(x) / len(x)
     return average
 
-print(f'Miyangin shoma: {miangin():.2f}')
+
+
+def mahdi():
+    return 'mahdi'
+
+print(mahdi() * 2)
