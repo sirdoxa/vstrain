@@ -44,29 +44,32 @@ def gold():
     gold_price = prices[18].text.replace(',', '').strip()
     print(f"Second-hand gold price: {fp(gold_price)} IRR")
 
-while True:
-    print("\nSelect an option:")
-    print("1) Dollar")
-    print("2) Euro")
-    print("3) Pound")
-    print("4) Second-hand Gold")
-    choice = input("==> ")
+try:
+    while True:
+        print("\nSelect an option:")
+        print("1) Dollar")
+        print("2) Euro")
+        print("3) Pound")
+        print("4) Second-hand Gold")
+        choice = input("==> ")
 
-    if choice == '1':
-        time.sleep(3)
-        dollar()
-        break
-    elif choice == '2':
-        time.sleep(3)
-        euro()
-        break
-    elif choice == '3':
-        time.sleep(3)
-        pound()
-        break
-    elif choice == '4':
-        time.sleep(3)
-        gold()
-        break
-    else:
-        print('\n' * 2 + 'Wrong choice, try again!' + '\n' * 2)
+        if choice == '1':
+            time.sleep(3)
+            dollar()
+            break
+        elif choice == '2':
+            time.sleep(3)
+            euro()
+            break
+        elif choice == '3':
+            time.sleep(3)
+            pound()
+            break
+        elif choice == '4':
+            time.sleep(3)
+            gold()
+            break
+        else:
+            print('\n' * 1 + 'Wrong choice, try again!' + '\n' * 1)
+except KeyboardInterrupt:
+    print("\nProgram interrupted by user!")
