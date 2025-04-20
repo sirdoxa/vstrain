@@ -495,6 +495,6 @@ def miangin():
 
 
 def mahdi():
-    return 'mahdi'
+    return 'mahdi '
 
 print(mahdi() * 2)
