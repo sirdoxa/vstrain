@@ -5,43 +5,60 @@
 # 5 - در ساختار جدید پایتون ، مفهوم کلاس برابر با مفهوم type  در نظر گرفته شده است .
 
 
-x = 4
-print(id(x))
-y = 4
-print(id(y))
-print(dir(y))
-print(x.__pow__(y))
-print(x.__mul__(y))
-print(x.__add__(y))
 
-# <object>.<attributes> = <value>
 
-class point():
-    def reset(self):
-        self.x = 0
-        self.y = 0
+# mypy ---------> for type hints !!!!
 
-o = point()
-k = point()
+# x = 4
+# print(id(x))
+# y = 4
+# print(id(y))
+# print(dir(y))
+# print(x.__pow__(y))
+# print(x.__mul__(y))
+# print(x.__add__(y))
 
-o.x = 656
-o.y = 188.5
-print(7 * '*' , ' o ', 7 * '*')
-print(o.y)
-print(o.x)
+# # <object>.<attributes> = <value>
 
-o.reset()
+# class point():
+#     def reset(self):
+#         self.x = 0
+#         self.y = 0
 
-print(7 * '*' , ' o ', 7 * '*')
-print(o.y)
-print(o.x)
+# o = point()
+# k = point()
+
+# o.x = 656
+# o.y = 188.5
+# print(7 * '*' , ' o ', 7 * '*')
+# print(o.y)
+# print(o.x)
+
+# o.reset()
+
+# print(7 * '*' , ' o ', 7 * '*')
+# print(o.y)
+# print(o.x)
 
 
 # =========================================
 from math import hypot
-
+import inspect
+import doctest
 
 class point:
+
+
+    """
+    >>> p1 = point()
+    >>> p2 = point(3,4)
+    >>> p1.distance(p2)
+    5
+    """
+    
+    # method
+    # attribute --> default/Non default
+
     def __init__(self, x:float = 0, y:float = 0) -> None:
         self.move(x, y)
     
@@ -55,7 +72,10 @@ class point:
     def distance(self, other:'point') -> float: 
         return hypot(self.x - other.x, self.y - other.y)
     
-
+doctest.testmod()
+    
+print(inspect.getsource(point))
+print(point.__bases__)
 p1 = point()
 p2 = point()
 
