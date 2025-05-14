@@ -19,21 +19,27 @@ class BankAccount:
         print(40 * "-")
 
     def deposit(self):
-        
-        amount = float(input('please enter your amount to deposit: '))
-        if amount > self.balance:
-            print('insufficent balance!')
+        amount = float(input('Please enter your amount to deposit: '))
+        if amount < 0:
+            print("Invalid amount!")
         else:
-            self.balance-= amount
-        
+            self.balance += amount
+        self.display()
+
+    def withdraw(self):
+        amount = float(input("Please enter amount to withdraw: "))
+        if amount > self.balance:
+            print("Insufficient balance!")
+        else:
+            self.balance -= amount
         self.display()
 
 def main():
-    acc1 = BankAccount("reza dolati")
-    print(acc1.account_number)
+    acc1 = BankAccount("Mahdi")
+    print(f"Your account number is: {acc1.account_number}")
 
     while True:
-        choice = int(input("Enter 1 to see your balance,\n2 to deposit\n3 to withdraw\n\tYour choice: "))
+        choice = int(input("1) your balance\n2) deposit\n3) withdraw\n>>> Your choice: "))
         if choice == 1:
             acc1.display()
         elif choice == 2:
@@ -43,10 +49,6 @@ def main():
         else:
             print("Please enter a valid number.")
 
-
 if __name__ == '__main__':
     main()
 
-mahdi = BankAccount('mahdi')
-
-mahdi()
