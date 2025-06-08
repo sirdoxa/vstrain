@@ -463,38 +463,134 @@
 # print(time.mktime(''))
 
 
-def name():
-    x = input('name: ')
-    return (f'welcome {x} !\nhere is your code!')
+# def name():
+#     x = input('name: ')
+#     return (f'welcome {x} !\nhere is your code!')
 
 
-def km():
-    x = input('KM: ')
-    y = int(x) * 1000
-    return ('*****' + f'{y} m' + '*****')
+# def km():
+#     x = input('KM: ')
+#     y = int(x) * 1000
+#     return ('*****' + f'{y} m' + '*****')
 
-def miangin():
-    x = []
-    dars_ha = ['riazi', 'farsi', 'oloom', 'fizik']
+# def miangin():
+#     x = []
+#     dars_ha = ['riazi', 'farsi', 'oloom', 'fizik']
     
-    for dars in dars_ha:
-        while True:
-            try:
-                score = int(input(f'{dars} (0-20): '))
-                if 0 <= score <= 20:
-                    x.append(score)
-                    break
-                else:
-                    print('⚠️ Lotfan adadi bein 0 ta 20 vared konid.')
-            except ValueError:
-                print('⚠️ Lotfan faghat adad sahih vared konid.')
+#     for dars in dars_ha:
+#         while True:
+#             try:
+#                 score = int(input(f'{dars} (0-20): '))
+#                 if 0 <= score <= 20:
+#                     x.append(score)
+#                     break
+#                 else:
+#                     print('⚠️ Lotfan adadi bein 0 ta 20 vared konid.')
+#             except ValueError:
+#                 print('⚠️ Lotfan faghat adad sahih vared konid.')
     
-    average = sum(x) / len(x)
-    return average
+#     average = sum(x) / len(x)
+#     return average
 
 
 
-def mahdi():
-    return 'mahdi '
+# def mahdi():
+#     return 'mahdi '
 
-print(mahdi() * 2)
+# print(mahdi() * 2)
+
+# print(x := input('Enter text: '), '->', x[::-1])
+
+
+# for i in x := input('enter your word: '):
+#     print(x.find('a'))
+
+# o = 0
+# while True:
+    
+#     x = int(input('enter a number: '))
+
+#     if x < 0 :
+#         print(f'sum is: {o}')
+#         break    
+#     o += x 
+
+# o=0
+# p=0
+# x = input('enter a sentence: ')
+# for i in x:
+#     if i.isalpha():
+#         if i == i.upper():
+#             o+=1
+#         elif i == i.lower():
+#             p += 1
+
+# print(f'your sentece is: {x}\nupper cases: {o}\nlower cases: {p}')
+
+# people = {
+#     "Ali": 20,
+#     "Sara": 17,
+#     "Reza": 25,
+#     "Neda": 15
+# }
+
+# for i in people.items():
+#     if i[1] >= 18 :
+#         print(i[0])
+
+# def is_prime(x):
+#     if x <= 1:
+#         return False
+#     for i in range(2, x):
+#         if x % i == 0:
+#             return False
+#     return True
+
+# x = int(input('enter a number: '))
+# print(is_prime(x))
+
+# while True:
+#     op = input('choose your option:\n1)max\n2)quit\n>>> ')
+#     if op == '1':
+#         l = input('enter a list of numbers seperated by space: ').split(' ')
+#         l = list(map(int,l))
+#         for i in range(len(l)):
+#             for j in range(len(l) - 1):
+#                 if l[j] > l[j + 1]:
+#                     l[j], l[j + 1] = l[j + 1], l[j]
+#         x = len(l) 
+#         print(f'\nyour list: {l}\n\nmax: {l[x-1]}')
+#     elif op == '2':
+#         print('good luck!')
+#         break
+#     else:
+#         print('wrong choice!\n')
+
+
+# while True:
+#     x = {}  
+#     word = input("Enter a word ('quit' = exit): ")
+#     for i in word:
+#         if i in x:
+#             x[i] += 1
+#         else:
+#             x[i] = 1
+
+#     if word == "quit":
+#             break
+#     print(x)
+
+# x = list(map(int,(o := input('enter your numbers seperated by space: ').split(' '))))
+# p = list(filter(lambda o: o % 2 == 0,x))
+# print(p)
+
+f = int(input('enter your number: ')) 
+
+def fact(x):    
+    if x == 0:
+        return 1
+    else:
+        return x * fact(x - 1)
+print(fact(f))
+
+
